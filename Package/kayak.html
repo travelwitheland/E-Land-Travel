@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Kayak</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-350%,-480%);
+            width: 200px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+            background-size: 400%;
+            border-radius: 30px;
+            z-index: 1;
+        }
+        a:hover{
+            animation: animate 8s linear infinite;
+        }
+        @keyframes animate{
+            0%
+            {
+                background-position: 0%;
+            }
+            100%{
+                background-position: 400%;
+            }
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+            background-size: 400%;
+            border-radius: 40px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        a:hover:before{
+            filter: blur(20px);
+            opacity: 1;
+            animation: animate 8s linear infinite;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px;
+            box-sizing:border-box;
+            border-radius: 4px;
+            background-color: rgb(35, 33, 33);
+            box-shadow: 0 5px 15px rgba(64, 245, 233, 0.5);
+            display: flex;
+        }
+        .box:hover{
+            box-shadow: 0 15px 30px rgba(0,0,0,.5);
+        }
+        .box .imgBox{
+            width: 150px;
+            flex: 0 0 150px;
+        }
+        .box .imgBox1 img{
+            max-width: 200%;
+            transform:translate(-0%,20%);
+        }
+        .box .imgBox2 img{
+            max-width: 200%;
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%,150%);
+        }
+        .box .content{
+            padding-left: 160px;
+        }
+        h1{
+            color: rgb(39, 190, 231);
+            font-size: 20px;
+            font-family: 'Poppins' , sans-serif;
+            text-align: center;
+            transform: translate(-40%);
+        }
+        p{
+            color: white;
+            font-size: 15px;
+            font-family: 'Poppins' , sans-serif;
+            text-align: center;
+            transform: translate(-40%);
+        }
+        h2{
+            color: rgb(39, 190, 231);
+            font-size: 20px;
+            font-family: 'Poppins' , sans-serif;
+            text-align: center;
+            transform: translate(-40%);
+        }
+    </style>
+
+    <a href="package.html">Back</a>
+
+    <!--Package box container-->
+    <div class="box">
+        <div class="imgBox1">
+            <img src="package images/kayak 3.JPG">
+        </div>
+        <div class="imgBox2">
+            <img src="package images/kayak 5.JPG">
+        </div>
+        <div class="content">
+            <h1>Kayak Package A</h1>
+            <p>Day trip: 9:00am-11:00am<br> 2pax <br> Package includes: lunch & bottle water, guided tour <br>Price: RM200
+            </p>
+            <h2>Kayak Package B </h2>
+            <p>Day trip: 9:00am-12:00pm<br> 4pax <br> Package includes: lunch & bottle water, guided tour<br> Price: RM400
+                </p>
+        </div>
+    
+    
+</body>
+</html>
